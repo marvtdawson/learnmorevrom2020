@@ -1,4 +1,7 @@
 @import "../../theme/pages/home";
+@import "../../theme/components/composition";
+@import "../../theme/components/buttons";
+@import "../../theme/layout/footer";
 
 #container {
   text-align: center;
@@ -26,3 +29,5 @@
 #container a {
   text-decoration: none;
 }
+
+

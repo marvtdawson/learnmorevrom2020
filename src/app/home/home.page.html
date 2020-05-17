@@ -1,7 +1,7 @@
 <!--suppress AngularUndefinedTag -->
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <ion-title class="title">
       <img class="header_logo" src="{{ headerLogo }}" alt="">
       Learn More VROM
     </ion-title>
@@ -9,16 +9,23 @@
 </ion-header>
 
 <ion-content class="main-content">
-  <section class="jumbotron">
-    <ion-img [src]="homePageImage"></ion-img>
+
+  <section class="jumbotron-header">
+      <ion-row>
+          <ion-col class="jumbotron-header__col-1">
+              <div class="jumbotron-header__col-1__text-wrapper">
+                  <p>{{ valueProposition }}</p>
+              </div>
+          </ion-col>
+      </ion-row>
   </section>
 
   <section class="how-we-help">
     <ion-card-header>
-      <!--ion-card-subtitle class="section-headings">
+      <ion-card-subtitle class="section-headings">
         <h1>How we help</h1>
         <h5>Yeah we do those other things too!</h5>
-      </ion-card-subtitle-->
+      </ion-card-subtitle>
     </ion-card-header>
     <ion-card>
       <ion-card-content class="how-we-help__content-wrapper">
@@ -37,7 +44,7 @@
           </div>
         </ion-col>
         <ion-col class="how-we-help__content-wrapper__col">
-          <i class="fas fa-dollar-sign fa-7x"></i>
+          <i class="fas fa-file-alt fa-7x"></i>
           <div>
             <h3>Application</h3>
             <p>Register New Tenants Online</p>
@@ -91,11 +98,11 @@
       <ion-card-content class="green-communication__content-wrapper">
         <ion-row class="green-communication__content-wrapper__row-1">
           <ion-col class="green-communication__content-wrapper__row-1__col-1 composition">
-            <img src="/src/assets/imgs/messages/pest_control.jpg" alt="Photo 1"
+            <img src="/assets/imgs/messages/pest_control.jpg" alt="Photo 1"
                  class="composition__photo composition__photo--p1 img-1">
-            <img src="/src/assets/imgs/messages/preventative_maintenance.jpg" alt="Photo 2"
+            <img src="/assets/imgs/messages/preventative_maintenance.jpg" alt="Photo 2"
                  class="composition__photo composition__photo--p2 img-2">
-            <img src="/src/assets/imgs/messages/rent_reminder.jpg" alt="Photo 3"
+            <img src="/assets/imgs/messages/rent_reminder.jpg" alt="Photo 3"
                  class="composition__photo composition__photo--p3 img-3">
           </ion-col>
           <ion-col class="green-communication_content-wrapper__row-1__col-2">
@@ -141,7 +148,7 @@
   <section class="footer">
     <ion-grid class="footer__cta-wrapper">
       <ion-row class="footer__cta-wrapper__value-proposition">
-        <h2>{{ value_proposition_footer }}</h2>
+        <h2>{{ valuePropositionFooter }}</h2>
         <!--h2>Get VROM Gather Data & Get Results!</h2-->
       </ion-row>
       <ion-row class="footer__cta-wrapper__cta-form">

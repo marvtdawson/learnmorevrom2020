@@ -10,13 +10,26 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #54483A;
 $color-grey-dark-2: #6D5D4B;
 
+$color-smokey-grey: #545454;
+$color-grey-dark: #777777;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-size: 1.6rem;
+
 // FONT THEME VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
 // FONT COLOR
 $font-primary-color: #ffffff;
+$color-white: #ffffff;
 $font-secondary-color: #54483A;
+$color-black: #000000;
 
 // FONT SIZES
 $font-primary-content-size: 1.6rem;
