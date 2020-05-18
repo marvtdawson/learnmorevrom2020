@@ -22,9 +22,22 @@
   width: 25%;
   position: relative;
 
-  @media only screen and (max-width: $bp-medium) {
-    width: 55%;
-    left: 6rem;
+  @media only screen and (min-width: $bp-medium-small) and (max-width: $bp-medium-larger) {
+    width: 43%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  @media only screen and (min-width: $bp-large) and (max-width: $bp-largest-plus) {
+    width: 43%;
+    margin: 0 auto;
+    // left: 5rem;
+  }
+
+  @media only screen and (min-width: $bp-smallest) and (max-width: $bp-small) {
+    width: 66%;
+    margin: 0 auto;
+    left: 0;
   }
 
   & .header_logo {
@@ -35,7 +48,9 @@
 .how-we-help,
 .green-communication,
 .value-perception,
-.founding-member {
+.founding-member,
+.parking,
+.laundry {
   @extend %section-default;
 
   & ion-card {
