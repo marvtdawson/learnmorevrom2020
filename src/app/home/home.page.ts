@@ -14,7 +14,7 @@ export class HomePage {
   // siteName = 'VROM';
   siteFooterName = 'VROM LLC';
   // siteTagLine = 'Manage Anywhere...';
-  valueProposition = 'Capture Data Build Perception Increase Profits';
+  valueProposition = 'Where Data & Perception Equals Profits';
   valuePropositionFooter = 'Capture Data -> Build Perception -> Increase Profits';
   date = new Date().getFullYear();
   constructor() {}
